@@ -128,10 +128,10 @@ export default function IdikharApp({ onBack }: IdikharAppProps) {
           <Button
             variant="ghost"
             onClick={() => setActiveTab("categories")}
-            className={`flex-1 rounded-xl font-medium transition-all ${
-              activeTab === "categories" 
-                ? "bg-primary text-primary-foreground font-bold shadow-md hover:bg-primary" 
-                : "text-primary-foreground/80 hover:bg-primary/20 hover:text-primary-foreground"
+            className={`flex-1 rounded-xl font-bold transition-all ${
+              activeTab === "categories"
+                ? "bg-primary text-white font-bold pointer-events-none"
+                : "bg-transparent text-primary-foreground/80 hover:bg-violet-100 hover:text-violet-700"
             }`}
           >
             <PieChart className="w-4 h-4 mr-2" />
@@ -140,10 +140,10 @@ export default function IdikharApp({ onBack }: IdikharAppProps) {
           <Button
             variant="ghost"
             onClick={() => setActiveTab("savings")}
-            className={`flex-1 rounded-xl font-medium transition-all ${
-              activeTab === "savings" 
-                ? "bg-primary text-primary-foreground font-bold shadow-md hover:bg-primary" 
-                : "text-primary-foreground/80 hover:bg-primary/20 hover:text-primary-foreground"
+            className={`flex-1 rounded-xl font-bold transition-all ${
+              activeTab === "savings"
+                ? "bg-primary text-white font-bold pointer-events-none"
+                : "bg-transparent text-primary-foreground/80 hover:bg-violet-100 hover:text-violet-700"
             }`}
           >
             <Target className="w-4 h-4 mr-2" />
